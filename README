@@ -1,0 +1,22 @@
+# MIPS-Assembly-FIR
+A simple FIR filter implemented in MIPS32 assembly.  
+
+Development of the program(s) initially started due to a university assignment.  
+Testing was done using the MARS Assembler/Simulator.  
+
+Configuration and settings used per program:  
+
+**--'Fewest_lines.s' program:**   
+  The objective was the implemantation with the *least amount of lines/code*.  
+  -Forwarding Enabled  
+	-Delay Slot Disable  
+	-Branch Target Buffer Disabled  
+	-Multiplier Latency 2  
+
+**--'Lowest_time.s' program:**   
+  The objective was *time efficiency*. The first program was modified to eliminate stalls  
+  caused by Data Dependencies and Hazards. The 'Loop Unrolling' method was applied twice in  
+  the inner loop and commands flow has been rearranged. Also the setting *Delay Slot* has been  
+  enabled in MARS with the respective changes in the program.  
+  
+The 'FIR_filter.c' file contains the original C function implementing the FIR filter. 
